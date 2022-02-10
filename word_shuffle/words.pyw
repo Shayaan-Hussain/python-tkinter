@@ -1,20 +1,10 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jun 19 11:49:50 2020
-
-@author: Shayaan
-"""
-
-
 import tkinter as tk
 from tkinter import ttk
-from ctypes import windll
 import pandas as pd
 from random import randint,shuffle
 import tkinter.font as font
-windll.shcore.SetProcessDpiAwareness(1)
 root=tk.Tk()
-root.geometry("180x170")
+root.geometry("235x170")
 myFont=font.Font(size=20)
 global i
 i=0
@@ -45,7 +35,7 @@ def test(*args,**kwargs):
         nex.grid(row=0,column=1,padx=5,pady=5,sticky="EW")
     else:
         result=ttk.Label(frame,text="Incorrect!!")
-        result.grid(row=0,column=0,padx=5,pady=5,sticky="EW")
+        result.grid(row=0,column=0,padx=5,pady=5,sticky="W")
 global intake
 global textdisp
 intake=tk.StringVar()
